@@ -13,7 +13,7 @@ import org.springframework.util.FileSystemUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 @Service
-public class StorageServiceImpl implements StorageService {
+public class StorageServiceImpl implements LocalStorageService {
 
     private final Path root = Paths.get("uploads");
 
