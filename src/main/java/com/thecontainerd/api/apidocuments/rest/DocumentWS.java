@@ -3,6 +3,8 @@ package com.thecontainerd.api.apidocuments.rest;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
+import java.sql.SQLException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -20,12 +22,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
-@CrossOrigin("http://localhost:8081")
 public class DocumentWS {
 
     @Autowired
@@ -71,6 +72,7 @@ public class DocumentWS {
                     .toUriString();
 
             return new ResponseDocument(
+                    doc.getId(),
                     doc.getName(),
                     url,
                     doc.getExt(),
@@ -94,5 +96,14 @@ public class DocumentWS {
             return new String(type.getName());
         }).collect(Collectors.toList());
         return ResponseEntity.status(HttpStatus.OK).body(docTypelist);
+    }
+
+    @DeleteMapping(value = "/delete/{id}")
+    public ResponseEntity<ResponseMessage> deleteDocument(@PathVariable String id) throws SQLException {
+        ResponseMessage message;
+
+        dbStorageService.deleteDocumentById(id);
+        message = new ResponseMessage("Documento: " + id + " removido");
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(message);
     }
 }

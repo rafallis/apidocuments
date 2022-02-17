@@ -29,7 +29,6 @@ public class StorageServiceImpl implements LocalStorageService {
     @Override
     public void save(MultipartFile file) {
         try {
-            System.out.println("WTF -> " + this.root.resolve(file.getOriginalFilename()));
             Files.copy(file.getInputStream(), this.root.resolve(file.getOriginalFilename()));
         } catch (IOException e) {
             throw new RuntimeException("The file could not be saved -> " + e.getMessage());

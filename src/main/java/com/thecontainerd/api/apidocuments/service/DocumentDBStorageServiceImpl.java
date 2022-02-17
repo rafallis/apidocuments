@@ -1,6 +1,7 @@
 package com.thecontainerd.api.apidocuments.service;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.stream.Stream;
 
 import com.thecontainerd.api.apidocuments.model.Document;
@@ -29,5 +30,9 @@ public class DocumentDBStorageServiceImpl implements DocumentDBStorageService {
 
     public Stream<Document> getAllFiles() {
         return documentRepository.findAll().stream();
+    }
+
+    public void deleteDocumentById(String docId) throws SQLException {
+        documentRepository.deleteById(docId);
     }
 }
