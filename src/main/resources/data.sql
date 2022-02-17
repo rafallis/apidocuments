@@ -1,0 +1,1 @@
+INSERT INTO documents.document_type (name) VALUES ('Article'), ('Book'), ('Contract'), ('Invoice'), ('Curriculum');
