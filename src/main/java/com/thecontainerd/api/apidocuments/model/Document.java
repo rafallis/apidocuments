@@ -1,4 +1,4 @@
-package com.thecontainerd.api.apidocumentos.model;
+package com.thecontainerd.api.apidocuments.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,4 +1,4 @@
-package com.thecontainerd.api.apidocumentos.config;
+package com.thecontainerd.api.apidocuments.config;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.beans.factory.annotation.Value;

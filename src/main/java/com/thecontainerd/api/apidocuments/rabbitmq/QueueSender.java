@@ -1,4 +1,4 @@
-package com.thecontainerd.api.apidocumentos.rabbitmq;
+package com.thecontainerd.api.apidocuments.rabbitmq;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

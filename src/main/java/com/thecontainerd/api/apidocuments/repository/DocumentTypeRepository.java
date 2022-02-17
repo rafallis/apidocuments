@@ -1,6 +1,6 @@
-package com.thecontainerd.api.apidocumentos.repository;
+package com.thecontainerd.api.apidocuments.repository;
 
-import com.thecontainerd.api.apidocumentos.model.DocumentType;
+import com.thecontainerd.api.apidocuments.model.DocumentType;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

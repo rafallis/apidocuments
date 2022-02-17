@@ -1,9 +1,9 @@
-package com.thecontainerd.api.apidocumentos.service;
+package com.thecontainerd.api.apidocuments.service;
 
 import java.io.IOException;
 import java.util.stream.Stream;
 
-import com.thecontainerd.api.apidocumentos.model.Document;
+import com.thecontainerd.api.apidocuments.model.Document;
 
 import org.springframework.web.multipart.MultipartFile;
 

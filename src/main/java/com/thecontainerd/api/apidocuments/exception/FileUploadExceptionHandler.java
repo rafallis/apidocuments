@@ -1,6 +1,6 @@
-package com.thecontainerd.api.apidocumentos.exception;
+package com.thecontainerd.api.apidocuments.exception;
 
-import com.thecontainerd.api.apidocumentos.helper.ResponseMessage;
+import com.thecontainerd.api.apidocuments.helper.ResponseMessage;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

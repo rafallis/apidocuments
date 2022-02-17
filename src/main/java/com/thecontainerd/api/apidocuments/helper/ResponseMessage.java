@@ -1,4 +1,4 @@
-package com.thecontainerd.api.apidocumentos.helper;
+package com.thecontainerd.api.apidocuments.helper;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,6 +1,6 @@
-package com.thecontainerd.api.apidocumentos;
+package com.thecontainerd.api.apidocuments;
 
-import com.thecontainerd.api.apidocumentos.service.LocalStorageService;
+import com.thecontainerd.api.apidocuments.service.LocalStorageService;
 
 import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.beans.factory.annotation.Autowired;

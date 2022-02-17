@@ -1,4 +1,4 @@
-package com.thecontainerd.api.apidocumentos.rest;
+package com.thecontainerd.api.apidocuments.rest;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -6,13 +6,13 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.thecontainerd.api.apidocumentos.helper.ResponseDocument;
-import com.thecontainerd.api.apidocumentos.helper.ResponseMessage;
-import com.thecontainerd.api.apidocumentos.model.Document;
-import com.thecontainerd.api.apidocumentos.rabbitmq.QueueSender;
-import com.thecontainerd.api.apidocumentos.service.DocumentDBStorageService;
-import com.thecontainerd.api.apidocumentos.service.DocumentTypeService;
-import com.thecontainerd.api.apidocumentos.service.LocalStorageService;
+import com.thecontainerd.api.apidocuments.helper.ResponseDocument;
+import com.thecontainerd.api.apidocuments.helper.ResponseMessage;
+import com.thecontainerd.api.apidocuments.model.Document;
+import com.thecontainerd.api.apidocuments.rabbitmq.QueueSender;
+import com.thecontainerd.api.apidocuments.service.DocumentDBStorageService;
+import com.thecontainerd.api.apidocuments.service.DocumentTypeService;
+import com.thecontainerd.api.apidocuments.service.LocalStorageService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;

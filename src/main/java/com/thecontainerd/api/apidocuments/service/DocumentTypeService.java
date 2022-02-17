@@ -1,9 +1,9 @@
-package com.thecontainerd.api.apidocumentos.service;
+package com.thecontainerd.api.apidocuments.service;
 
 import java.util.stream.Stream;
 
-import com.thecontainerd.api.apidocumentos.model.DocumentType;
-import com.thecontainerd.api.apidocumentos.repository.DocumentTypeRepository;
+import com.thecontainerd.api.apidocuments.model.DocumentType;
+import com.thecontainerd.api.apidocuments.repository.DocumentTypeRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
